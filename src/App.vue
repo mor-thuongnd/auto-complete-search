@@ -1,28 +1,35 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <SearchCity />
+    <SearchUser style="margin-top: 216px" />
   </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
-
+import SearchCity from "@/components/SearchCity.vue";
+import SearchUser from "./components/SearchUser.vue";
 export default {
   name: "App",
   components: {
-    HelloWorld,
+    SearchCity,
+    SearchUser,
   },
 };
 </script>
 
 <style lang="scss">
-#app {
+*,
+body {
+  box-sizing: border-box;
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+}
+body {
+  padding: 0;
+  margin: 0;
+}
+#app {
+  padding: 150px;
 }
 </style>
